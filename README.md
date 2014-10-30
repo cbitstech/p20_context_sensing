@@ -6,6 +6,6 @@ p20_context_sensing
 2. Install Ruby on Rails
 3. Install the compass gem: `gem install compass`
 4. Install node.js from the nodejs.org website
-5. Run npm update from the project folder
+5. Run `npm update` from the project folder
 4. Install the yeoman generator for angular: `npm install -g generator-angular`
 5. Run `grunt serve` to run the app
