@@ -13,4 +13,5 @@ p20_context_sensing
 9. Use the cordovd command line interface to make an API: http://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html
 
 Want to make this into a mobile app?
+------------------------------------
 http://cordova.apache.org/docs/en/4.0.0/guide_cli_index.md.html
