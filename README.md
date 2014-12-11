@@ -12,6 +12,12 @@ p20_context_sensing
 8. Run `grunt build` to make a buildable version of the application (it will generate to the build foldr)
 9. Use the cordovd command line interface to make an API: http://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html
 
-Want to make this into a mobile app?
+Want to make this into a mobile app? From your app's folder:
 ------------------------------------
-http://cordova.apache.org/docs/en/4.0.0/guide_cli_index.md.html
+`sudo npm install -g cordova`
+`cordova create www edu.northwestern.p20 P20`
+move the contents of the grunt build dist folder into the www folder withing
+`cordova platform add android`
+`cordova build` to make an app
+`cordova run` to run the app in an emulator
+ 
