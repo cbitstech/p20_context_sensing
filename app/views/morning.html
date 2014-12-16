@@ -1,0 +1,35 @@
+
+<h1>Morning</h1>
+<form id="morning-survey" ng-submit="submitForm('/completedSurvey')">
+<div ng-repeat="question in questions">
+<label for="{{question.name}}">{{question.label}}</label>
+<input type="{{question.type}}" name="{{question.name}}">
+</div>
+
+<label>How are you feeling this morning?</label>
+
+<h3 class="input-view">{{mood}}</h3>
+<input type="range" ng-model="mood" min="-5" max="5" step="1" value="0" list="five_to_five">
+<table><tr><td class="alert-danger">Negative</td><td class="alert-success">Positive</td></tr></table>
+
+<h3 class="input-view">{{alertness}}</h3>
+<input type="range" ng-model="alertness" min="-5" max="5" step="1" value="0" list="five_to_five">
+<table><tr><td class="alert-danger">Inactive/Sleepy</td><td class="alert-success">Active/Alert</td></tr></table>
+
+<datalist id="five_to_five">
+  <option>-5</option>
+  <option>-4</option>
+  <option>-3</option>
+  <option>-2</option>
+  <option>-1</option>
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</datalist>
+
+
+<button class="btn btn-primary" type="submit">Continue &amp; Save</button>
+</form>
