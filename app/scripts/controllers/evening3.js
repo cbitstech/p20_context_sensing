@@ -16,24 +16,26 @@ angular.module('p20ContextSensingApp')
 	  	{name:"num_family_members_interactions", label:"How many of these interactions were with family members?", type:"number"},
 	  	{name:"num_coworkers_interactions", label:"How many of these interactions were with co-workers?", type:"number"},
       {
-          name:"activity_level",
-          label:"How active were you?",
-          labelStyles:"",
+          name:"activity_level", //goes to the server
+          label:"How active were you?", //question presented to user
+          labelStyles:"", //lets you add CSS to the label
           type:"range",
           styles:"",
           visibleMin:1,
           visibleMax:10,
           actualMin:3,
           actualMax:7,
+          showUnavailableRange:true,
+          showUnavailableRangeStyles:'',
           stepSize:1,
           responseRequired:'required',
           value:4,
-          ticks:[1,2,3,4,5,6,7,8,9,10],
-          optionRangeStyles:'margin-top:-7px;',
+          ticks:[3,4,5,6,7],
+          optionRangeStyles:'margin-top:-8px;',
           optionRanges:[ 
-            {label:'Not very', class:'alert-success', widthPercentage:30, styles:''},
-            {label:'A bit', class:'alert-warning', widthPercentage:40, styles:''},
-            {label:'Super', class:'alert-danger', widthPercentage:30, styles:''}
+            {label:'Bottom', class:'alert-danger', widthPercentage:30, styles:''},
+            {label:'Middle', class:'alert-warning', widthPercentage:40, styles:''},
+            {label:'Top', class:'alert-success', widthPercentage:30, styles:''}
           ] 
       }
   	];
