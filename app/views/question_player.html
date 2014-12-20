@@ -1,0 +1,23 @@
+<div ng-repeat="question in questions">
+<div ng-switch="question.type">
+
+	<div ng-switch-when="range">
+		<label style="width:100%;">{{question.label}}</label>
+		<h3 class="input-view" style="margin:0;padding:0;{{question.labelStyles}}">{{questions[$index].value}}</h3>
+		<input type="range" ng-model="questions[$index].value" min="{{question.actualMin}}" max="{{question.actualMax}}" step="{{question.stepSize}}" list="{{question.name}}_list" {{question.responseRequired}} style="z-index:100; width:{{100*(question.actualMax-question.actualMin)/(question.visibleMax-question.visibleMin)}}%; margin-left:{{100*(question.actualMin-question.visibleMin)/(question.visibleMax-question.visibleMin)}}%; {{question.styles}}">
+			<table style="z-index:-100;width:100%;{{question.optionRangeStyles}}"><tr>
+				<td ng-repeat="option in question.optionRanges" class="{{option.class}}" style="text-align:center;width:{{option.widthPercentage}}%;{{option.styles}}">{{option.label}}</td>
+			</tr></table>
+			<datalist id="{{question.name}}_list">
+			<option ng-repeat="value in question.ticks">{{value}}</option>
+			</datalist>
+	</div>
+
+
+	<div ng-switch-default>
+	<label for="{{question.name}}">{{question.label}} {{question.type}}
+	<input type="{{question.type}}" name="{{question.name}}"></label>
+	</div>
+
+</div>
+</div>

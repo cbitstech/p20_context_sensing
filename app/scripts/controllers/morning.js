@@ -19,8 +19,9 @@ angular.module('p20ContextSensingApp')
   	$scope.questions = [
 	  	{name:"bedtime", label:"What time did you go to bed last night?", type:"time"},
 	  	{name:"waketime", label:"What time did you wake up this morning?", type:"time"},
-      {name:"numTimesWaking", label:"How many times did you wake up during the night?", type:"number"}
+      {name:"numTimesWaking", label:"How many times did you wake up during the night?", type:"number"},
   	];
+
 
   	$scope.submitForm = function(next_url){
         Submitdata.submit();
