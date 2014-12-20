@@ -21,7 +21,7 @@ angular.module('p20ContextSensingApp')
           labelStyles:"", //lets you add CSS to the label
           type:"range",
           styles:"",
-          visibleMin:1,
+          visibleMin:0,
           visibleMax:10,
           actualMin:3,
           actualMax:7,

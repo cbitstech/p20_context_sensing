@@ -20,7 +20,6 @@ angular.module('p20ContextSensingApp')
 	  	{name:"spiritual_visited", label:"How many of these were places for spiritual activities (i.e., praying, worshipping, meditating)?", type:"number"}
   	];
 
-
   	$scope.submitForm = function(next_url){
     Submitdata.submit();
     console.log(next_url);  
