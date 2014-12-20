@@ -17,7 +17,7 @@ angular.module('p20ContextSensingApp')
 	  	{name:"num_coworkers_interactions", label:"How many of these interactions were with co-workers?", type:"number"},
       {
           name:"activity_level",
-          label:"How active?",
+          label:"How active were you?",
           labelStyles:"",
           type:"range",
           styles:"",
@@ -31,9 +31,9 @@ angular.module('p20ContextSensingApp')
           ticks:[1,2,3,4,5,6,7,8,9,10],
           optionRangeStyles:'margin-top:-7px;',
           optionRanges:[ 
-            {label:'Bottom', class:'alert-success', widthPercentage:30, styles:''},
-            {label:'Middle', class:'alert-warning', widthPercentage:40, styles:''},
-            {label:'Top', class:'alert-danger', widthPercentage:30, styles:''}
+            {label:'Not very', class:'alert-success', widthPercentage:30, styles:''},
+            {label:'A bit', class:'alert-warning', widthPercentage:40, styles:''},
+            {label:'Super', class:'alert-danger', widthPercentage:30, styles:''}
           ] 
       }
   	];
