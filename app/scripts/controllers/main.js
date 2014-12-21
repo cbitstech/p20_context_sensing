@@ -78,8 +78,8 @@
 
 
 
-    // (new PurpleRobot()).updateTrigger({ script: dialog, startAt: amTriggerTime, endAt: amTriggerTime}).execute();
-    // (new PurpleRobot()).updateTrigger({ script: dialog, startAt: pmTriggerTime, endAt: pmTriggerTime}).execute();
+    (new PurpleRobot()).updateTrigger({ script: dialog, startAt: amTriggerTime, endAt: amTriggerTime}).execute();
+    (new PurpleRobot()).updateTrigger({ script: dialog, startAt: pmTriggerTime, endAt: pmTriggerTime}).execute();
 
 
     $location.path('#/');
