@@ -71,6 +71,10 @@ angular
         templateUrl: 'views/location_finder.html',
         controller: 'LocationFinderCtrl'
       })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

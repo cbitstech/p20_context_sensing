@@ -1,0 +1,30 @@
+<div ng-repeat="question in questions">
+<div ng-switch="question.type">
+
+	<div ng-switch-when="range">
+		<label style="width:100%;{{question.labelStyles}}">{{question.label}}</label>
+		<h3 class="input-view" style="margin:0;padding:0;">{{questions[$index].value}}</h3>
+		<table style="width:100%; cell-spacing:0; border-collapse:collapse; padding:0; margin:0; border-spacing:0">
+			<tr>
+				<td style="width:{{100*(question.actualMin-question.visibleMin)/(question.visibleMax-question.visibleMin)}}%;"><hr ng-if="question.showUnavailableRange" style="display: block; height: 1px; border: 0; border-top: 4px solid #ccc; margin: 0; padding: 0; {{question.showUnavailableRangeStyles}}"/></td>
+			<td style="width:{{100*(question.actualMax-question.actualMin)/(question.visibleMax-question.visibleMin)}}%;">
+		<input type="range" ng-model="questions[$index].value" min="{{question.actualMin}}" max="{{question.actualMax}}" step="{{question.stepSize}}" list="{{question.name}}_list" {{question.responseRequired}} style="z-index:100; {{question.styles}}"></td>
+	</td>
+	<td style="width:{{100*(question.visibleMax-question.actualMax)/(question.visibleMax-question.visibleMin)}}%;"><hr ng-if="question.showUnavailableRange" style="display: block; height: 1px; border: 0; border-top: 4px solid #ccc; margin: 1em 0; padding: 0; {{question.showUnavailableRangeStyles}}"/></td>
+  </tr></table>
+			<table style="z-index:-100;width:100%; cell-spacing:0; border-collapse:collapse; padding:0; margin:0; border-spacing:0;{{question.optionRangeStyles}}"><tr>
+				<td ng-repeat="option in question.optionRanges" class="{{option.class}}" style="text-align:center;width:{{option.widthPercentage}}%;{{option.styles}}">{{option.label}}</td>
+			</tr></table>
+			<datalist id="{{question.name}}_list">
+			<option ng-repeat="value in question.ticks">{{value}}</option>
+			</datalist>
+	</div>
+
+
+	<div ng-switch-default>
+	<label for="{{question.name}}">{{question.label}} {{question.type}}
+	<input type="{{question.type}}" name="{{question.name}}"></label>
+	</div>
+
+</div>
+</div>

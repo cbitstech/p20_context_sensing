@@ -8,8 +8,9 @@ grunt build
 
 wait
 
-
-cp dist/* www/*
+rm -rf www
+cp -rf dist www
+cordova run android
 
 
 
