@@ -52,6 +52,7 @@
 /Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/scripts/oldieshim.ff90b0fb.js \
 /Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/scripts/scripts.82a72135.js \
 /Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/scripts/vendor.ceb73855.js \
+/Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/styles/bootstrap.min.css \
 /Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/styles/main.1f3e46dd.css \
 /Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/views/about.html \
 /Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/views/completedsurvey.html \

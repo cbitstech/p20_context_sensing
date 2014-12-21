@@ -10,6 +10,7 @@ wait
 
 rm -rf www
 cp -rf dist www
+cp app/styles/bootstrap.min.css www/styles
 cordova run android
 
 
