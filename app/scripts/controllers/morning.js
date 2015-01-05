@@ -13,6 +13,9 @@ angular.module('p20ContextSensingApp')
   	localStorage.setItem('surveyName','morning');
   	localStorage.setItem('sessionGUID',guid());
 
+  $("input[type='time']").mobiscroll().time({theme:'android-ics'});
+
+
     $scope.mood = 0;
     $scope.alertness = 0;
     

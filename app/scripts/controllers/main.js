@@ -31,6 +31,7 @@
     $scope.userExists = true;
   }
 
+  $("input[type='time']").mobiscroll().time({theme:'android-ics'});
 
   //  if ($scope.gotoOnAppStart == '/'){
   //   $scope.showHome = true
