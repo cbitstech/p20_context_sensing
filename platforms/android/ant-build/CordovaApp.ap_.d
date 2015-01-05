@@ -51,7 +51,7 @@
 /Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff \
 /Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/images/yeoman.d2754b85.png \
 /Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/scripts/oldieshim.ff90b0fb.js \
-/Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/scripts/scripts.4f65a424.js \
+/Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/scripts/scripts.a2db8940.js \
 /Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/scripts/vendor.ceb73855.js \
 /Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/styles/bootstrap.min.css \
 /Users/markbegale/projects/p20_context_sensing/platforms/android/assets/www/styles/main.1f3e46dd.css \

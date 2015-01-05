@@ -45,24 +45,24 @@
 
   $scope.createUser = function(){
 
-    localStorage.setItem("userId", $("input[name=userId").val());
-    localStorage.setItem("amPromptTime", $("input[name=amprompttime").val())
-    localStorage.setItem("pmPromptTime", $("input[name=pmprompttime").val())
+    localStorage.setItem("userId", $("input[name=userId]").val());
+    localStorage.setItem("amPromptTime", $("input[name=amprompttime]").val())
+    localStorage.setItem("pmPromptTime", $("input[name=pmprompttime]").val())
 
     var amTriggerDateTime = new Date();
     var pmTriggerDateTime = new Date();
     var amTriggerDateTimeEnd = new Date();
     var pmTriggerDateTimeEnd = new Date();
 
-    amTriggerDateTime.setHours($("input[name=amprompttime").val().split(":")[0]);
-    amTriggerDateTime.setMinutes($("input[name=amprompttime").val().split(":")[1]);
-    pmTriggerDateTime.setHours($("input[name=pmprompttime").val().split(":")[0]);
-    pmTriggerDateTime.setMinutes($("input[name=pmprompttime").val().split(":")[1]);
+    amTriggerDateTime.setHours($("input[name=amprompttime]").val().split(":")[0]);
+    amTriggerDateTime.setMinutes($("input[name=amprompttime]").val().split(":")[1]);
+    pmTriggerDateTime.setHours($("input[name=pmprompttime]").val().split(":")[0]);
+    pmTriggerDateTime.setMinutes($("input[name=pmprompttime]").val().split(":")[1]);
 
-    amTriggerDateTimeEnd.setHours($("input[name=amprompttime").val().split(":")[0]);
-    amTriggerDateTimeEnd.setMinutes(parseInt($("input[name=amprompttime").val().split(":")[1])+1);
-    pmTriggerDateTimeEnd.setHours($("input[name=pmprompttime").val().split(":")[0]);
-    pmTriggerDateTimeEnd.setMinutes(parseInt($("input[name=pmprompttime").val().split(":")[1])+1);
+    amTriggerDateTimeEnd.setHours($("input[name=amprompttime]").val().split(":")[0]);
+    amTriggerDateTimeEnd.setMinutes(parseInt($("input[name=amprompttime]").val().split(":")[1])+1);
+    pmTriggerDateTimeEnd.setHours($("input[name=pmprompttime]").val().split(":")[0]);
+    pmTriggerDateTimeEnd.setMinutes(parseInt($("input[name=pmprompttime]").val().split(":")[1])+1);
 
 
 
