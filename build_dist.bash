@@ -4,7 +4,7 @@ clear
 
 echo "building distribution directory"
 
-grunt build
+grunt build --force
 
 wait
 
